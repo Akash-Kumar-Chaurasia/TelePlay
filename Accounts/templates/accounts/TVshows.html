@@ -1,0 +1,245 @@
+{% extends 'Accounts/base.html' %}
+{% load static %}
+{% block content%}
+
+
+<!-- main container -->
+
+  <div class="container">
+
+   <!--  #HEADER SECTION -->
+
+    
+    <main>
+        <div style="padding-left:50px ; text-align: center; padding-top: 50px; padding-bottom: 50px;"> <h2>TV Shows</h2></div>
+
+
+
+
+
+
+
+      <!-- MOVIES SECTION -->
+      <section class="movies">
+
+       
+
+        <!-- movies grid -->
+
+        <div class="movies-grid">
+
+            <!-- Little Things -->
+          <div class="movie-card">
+    
+            <div class="card-head">
+              <img src="{% static 'images/movies/Little Things.jpeg' %}" alt="" class="card-img">
+    
+              <div class="card-overlay">
+    
+    
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.2</span>
+                </div>
+    
+                <div class="play">
+                  <a href="https://www.youtube.com/watch?v=LhpA-_8cWv8" target="_blank">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                    <span>Watch Trailer</span>
+                  </a>
+                </div>
+    
+              </div>
+            </div>
+    
+            <div class="card-body">
+              <a href="{% url 'LITTLETHINGS' %}" target="_blank"><h3 class="card-title">Little Things</h3></a>
+    
+              <div class="card-info">
+                <span class="genre">Romance/Comedy</span>
+                <span class="year">2016</span>
+              </div>
+            </div>
+    
+          </div>
+
+
+          <!--Mismatched-->
+          
+          <div class="movie-card">
+    
+            <div class="card-head">
+              <img src="{% static 'images/movies/mismatched.jpg' %}" alt="" class="card-img">
+    
+              <div class="card-overlay">
+    
+    
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>5.5</span>
+                </div>
+    
+                <div class="play">
+                  <a href=" " target="_blank">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                    <span>Watch Trailer</span>
+                  </a>
+                </div>
+                <div class="play">
+                  <a href="https://youtu.be/uYmwNNkix-k" target="_blank">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                    <span>Watch Trailer</span>
+                  </a>
+                </div>
+    
+              </div>
+            </div>
+    
+            <div class="card-body">
+              <a href="{% url 'Mismatched' %}" target="_blank"><h3 class="card-title">Mismatched</h3></a>
+    
+              <div class="card-info">
+                <span class="genre">Drama/Romance</span>
+                <span class="year">2020</span>
+              </div>
+            </div>
+    
+          </div>
+          
+          <!-- Flames -->
+          <div class="movie-card">
+    
+            <div class="card-head">
+              <img src="{% static 'images/movies/Flames.jpg'%}" alt="" class="card-img">
+    
+              <div class="card-overlay">
+    
+    
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.9</span>
+                </div>
+    
+                <div class="play">
+                  <a href="https://www.youtube.com/watch?v=ouyrvRJ6-3M" target="_blank">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                    <span>Watch Trailer</span>
+                  </a>
+                </div>
+    
+              </div>
+            </div>
+    
+            <div class="card-body">
+              <a href="{% url 'Flames' %}" target="_blank"><h3 class="card-title">Flames</h3></a>
+    
+              <div class="card-info">
+                <span class="genre">Romance/Comedy</span>
+                <span class="year">2018</span>
+              </div>
+            </div>
+    
+          </div>
+          
+          <!-- Kota Factory -->
+          <div class="movie-card">
+    
+            <div class="card-head">
+              <img src="{% static 'images/movies/KotaFactory.jpg'%}" alt="" class="card-img">
+    
+              <div class="card-overlay">
+    
+    
+    
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>9.1</span>
+                </div>
+    
+                <div class="play">
+                  <a href="https://www.youtube.com/watch?v=pNZQ6msbOvM" target="_blank">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                    <span>Watch Trailer</span>
+                  </a>
+                </div>
+    
+              </div>
+            </div>
+    
+            <div class="card-body">
+              <a href="{% url 'KotaFactory' %}" target="_blank"><h3 class="card-title">Kota Factory</h3> </a>
+    
+              <div class="card-info">
+                <span class="genre">Comedy/Drama</span>
+                <span class="year">2019</span>
+              </div>
+            </div>
+    
+          </div>
+
+          <!-- Aspirants -->
+          <div class="movie-card">
+    
+            <div class="card-head">
+              <img src="{% static 'images/movies/Aspirants.jpg'%}" alt="" class="card-img">
+    
+              <div class="card-overlay">
+    
+    
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>9.2</span>
+                </div>
+    
+                <div class="play">
+                  <a href="https://youtu.be/ViOutJ0kuJY" target="_blank">
+                    <ion-icon name="play-circle-outline"></ion-icon>
+                    <span>Watch Trailer</span>
+                  </a>
+                </div>
+    
+              </div>
+            </div>
+    
+            <div class="card-body">
+              <a href="{% url 'Aspirants' %}" target="_blank"><h3 class="card-title">Aspirants</h3> </a>
+    
+              <div class="card-info">
+                <span class="genre">Drama</span>
+                <span class="year">2021</span>
+              </div>
+            </div>
+    
+          </div>
+<!--            -->
+    
+        </div>
+
+        
+
+      </section>
+
+
+
+
+
+
+      
+
+    </main>
+
+
+    
+
+  </div>
+
+
+  
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  {% endblock %}

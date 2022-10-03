@@ -1,0 +1,228 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="{% static 'images/fav-icon.png' %}" type="image/png">
+  <script src="main.js"></script>
+  <title>Search</title>
+
+ <!--  css link -->
+  <link rel="stylesheet" href="{% static 'css/search.css' %}">
+
+<!--  google font link -->
+
+  <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+</head>
+
+<body>
+
+
+
+<!-- main container -->
+
+  <div class="container">
+
+   <!--  #HEADER SECTION -->
+
+    <header class="">
+      <div class="navbar">
+
+      
+
+        <a href="{% url 'index' %}" class="navbar-brand">
+          <img src="{% static 'images/logo.png' %}" alt="">
+        </a>
+
+        <!-- navbar navigation -->
+
+        <nav class="">
+          <ul class="navbar-nav">
+
+            <li> <a href="{% url 'index' %}" class="navbar-link">Home</a> </li>
+            <li> <a href="#category" class="navbar-link">Category</a> </li>
+            
+
+          </ul>
+        </nav>
+
+
+      </div>
+    </header>
+
+
+
+
+
+    <!-- MAIN SECTION -->
+    <main>
+
+      
+
+            <form action="#" class="navbar-form">
+              <input type="text" id="myInput" onkeyup="myFunction()" name="search" placeholder="I'm looking for..." class="navbar-form-search">
+              
+              <div class="Movie_tv_list">
+              <ul id="myUL" >
+                <li><a href="{% url 'onenineoneseven' %}">1917</a></li>
+              
+                <li><a href="{% url 'Aspirants' %}">Aspirants</a></li>
+                <li><a href="{% url 'AvengersEndgame' %}">Avengers Endgame</a></li>
+              
+                <li><a href="{% url 'black_panther' %}">black panther</a></li>
+                <li><a href="{% url 'captainmarvel' %}">captain marvel</a></li>
+                <li><a href="{% url 'casino_royale' %}">casino royale</a></li>
+
+                <li><a href="{% url 'dark_knight' %}">  The Dark Knight </a> </li>
+                <li><a href="{% url 'dune' %}">Dune</a></li>
+              
+                <li><a href="{% url 'eternals' %}">Eternals</a></li>
+                <li><a href="{% url 'Flames' %}">Flames</a> </li>
+              
+                <li><a href="{% url 'intersteller' %}">Intersteller</a></li>
+                <li><a href="{% url 'KotaFactory' %}">Kota Factory</a></li>
+                <li><a href="{% url 'lotr' %}">Lord Of the Rings</a></li>
+
+                <li><a href="{% url 'MatrixResurrections' %}">  Matrix Resurrections </a> </li>
+                <li><a href="{% url 'Mismatched' %}"> Mismatched </a></li>
+              
+                <li><a href="{% url 'Red_notice' %}"> Red Notice</a></li>
+              
+                <li><a href="{% url 'sangchi' %}">Shang-Chi and The Legend of The Ten Rings</a></li>
+                <li><a href="{% url 'SavingPrivateRyan' %}"> Saving Private Ryan</a></li>
+                <li><a href="{% url 'SpiderManHomecoming' %}"> Spider-Man Homecoming </a></li>
+
+                <li><a href="{% url 'THRUSDAY' %}"> Thursday</a></li>
+                <li><a href="{% url 'uri' %}"> URI : The Surgical Strike</a></li>
+                <li><a href="{% url 'venom' %}"> Venom</a></li>
+                <li><a href="{% url 'bhramstra' %}"> Avatar The Way of Water   </a></li>
+                <li><a href="{% url 'LITTLETHINGS' %}"> Little Things</a></li>
+                
+
+              </ul>
+              </div>
+
+              <script>
+              function myFunction() {
+                  var input, filter, ul, li, a, i, txtValue;
+                  input = document.getElementById("myInput");
+                  filter = input.value.toUpperCase();
+                  ul = document.getElementById("myUL");
+                  li = ul.getElementsByTagName("li");
+                  for (i = 0; i < li.length; i++) {
+                      a = li[i].getElementsByTagName("a")[0];
+                      txtValue = a.textContent || a.innerText;
+                      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                          li[i].style.display = "";
+                      } else {
+                          li[i].style.display = "none";
+                      }
+                  }
+              }
+              </script>
+              <button class="navbar-form-btn">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+  
+              <button class="navbar-form-close">
+                <ion-icon name="close-circle-outline"></ion-icon>
+              </button>
+            </form>
+  
+
+
+
+
+      
+
+    </main>
+
+
+    <!-- FOOTER SECTION -->
+
+    <footer>
+
+      <div class="footer-content">
+
+        <div class="footer-brand">
+          <img src="{% static 'images/logo.png' %}" alt="" class="footer-logo">
+          <p class="slogan">Movies & TV Shows, Online cinema
+            </p>
+
+
+          <div class="social-link">
+
+            <a href="https://www.facebook.com/profile.php?id=100085911518079" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="https://twitter.com/TelePlayvit" target="_blank">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/teleplay.vitb/" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://youtube.com/channel/UCe_izpv0jZrNDJljx2BW5XQ" target="_blank">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+
+          </div>
+        </div>
+
+
+          <ul>
+
+            <h4 class="link-heading">Browse</h4>
+
+            <li class="link-item"><a href="#">TV Shows</a></li>
+            <li class="link-item"><a href="#">Movies</a></li>
+            <li class="link-item"><a href="#">Kids</a></li>
+            <li class="link-item"><a href="#">Collections</a></li>
+
+          </ul>
+
+
+          <ul>
+
+            <h4 class="link-heading">Help</h4>
+
+            <li class="link-item"><a href="#">Contact Us</a></li>
+            <li class="link-item"><a href="#">E-mail us </a></li>
+            
+
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-copyright">
+
+        <div class="copyright">
+          <p>&copy; Copyright 2022 TelePlay</p>
+        </div>
+
+        <div class="wrapper">
+          <a href="file:///D:/TelePlay/about_us.html" target="_blank">About Us</a>
+          <a href="file:///D:/TelePlay/privacy_policy.html"target="_blank">Privacy policy</a>
+          <a href="file:///D:/TelePlay/terms.html" target="_blank">Terms and conditions</a>
+        </div>
+
+      </div>
+
+    </footer>
+
+  </div>
+
+
+  
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

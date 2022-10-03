@@ -1,0 +1,176 @@
+{% extends 'Accounts/base.html' %}
+{% load static %}
+{% block content%}
+
+
+<!-- main container -->
+
+  <div class="container">
+
+   <!--  #HEADER SECTION -->
+
+    
+    <main>
+        <div style="padding-left:50px ; text-align: center; padding-top: 50px; padding-bottom: 50px;"> <h2>Comedy</h2></div>
+
+
+
+
+
+
+
+      <!-- MOVIES SECTION -->
+      <section class="movies">
+
+       
+
+        <!-- movies grid -->
+
+        <div class="movies-grid">
+
+          <!-- RED NOTICE-->
+        <div class="movie-card">
+  
+          <div class="card-head">
+            <img src="{% static 'images/movies/red-notice.jpg' %}" alt="" class="card-img">
+  
+            <div class="card-overlay">
+  
+  
+              <div class="rating">
+                <ion-icon name="star-outline"></ion-icon>
+                <span>6.3</span>
+              </div>
+  
+              <div class="play">
+                <a href="https://youtu.be/Pj0wz7zu3Ms" target="_blank">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                  <span>Watch Trailer</span>
+                </a>
+              </div>
+  
+            </div>
+          </div>
+  
+          <div class="card-body">
+            <a href="{https://www.netflix.com/title/81161626}" target="_blank"><h3 class="card-title">RED NOTICE</h3></a>
+  
+            <div class="card-info">
+              <span class="genre">Comedy/Action</span>
+              <span class="year">2021</span>
+            </div>
+          </div>
+  
+        </div>
+
+
+        <!--BHOOL BHULAIYAA 2-->
+        
+        <div class="movie-card">
+  
+          <div class="card-head">
+            <img src="{% static 'images/movies/bhool_bhulaya.jpg' %}" alt="" class="card-img">
+  
+            <div class="card-overlay">
+  
+  
+              <div class="rating">
+                <ion-icon name="star-outline"></ion-icon>
+                <span>5.7</span>
+              </div>
+  
+              <div class="play">
+                <a href="https://youtu.be/P2KRKxAb2ek " target="_blank">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                  <span>Watch Trailer</span>
+                </a>
+              </div>
+              <div class="play">
+                <a href="https://www.netflix.com/title/81243747" target="_blank">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                  <span>Watch movie</span>
+                </a>
+              </div>
+  
+            </div>
+          </div>
+  
+          <div class="card-body">
+            <a href="{}" target="_blank"><h3 class="card-title">Bhool Bhulaiyaa 2</h3></a>
+  
+            <div class="card-info">
+              <span class="genre">Horror/Comedy </span>
+              <span class="year">2022</span>
+            </div>
+          </div>
+  
+        </div>
+        
+        <!-- Badhaai Ho! -->
+        <div class="movie-card">
+  
+          <div class="card-head">
+            <img src="{% static 'images/movies/BadhaaiHO.jpg' %}" alt="" class="card-img">
+  
+            <div class="card-overlay">
+  
+  
+              <div class="rating">
+                <ion-icon name="star-outline"></ion-icon>
+                <span>7.9</span>
+              </div>
+  
+              <div class="play">
+                <a href="https://www.youtube.com/watch?v=unAljCZMQYw" target="_blank">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                  <span>Watch Trailer</span>
+                </a>
+              </div>
+  
+            </div>
+          </div>
+  
+          <div class="card-body">
+            <a href="{}" target="_blank"><h3 class="card-title">Badhaai HO</h3></a>
+  
+            <div class="card-info">
+              <span class="genre">Comedy</span>
+              <span class="year">2018</span>
+            </div>
+          </div>
+  
+        </div>
+        
+       
+<!--            -->
+  
+      </div>
+
+        
+
+      </section>
+
+
+
+
+
+
+      
+
+    </main>
+
+
+    
+
+  </div>
+
+
+  
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  {% endblock %}

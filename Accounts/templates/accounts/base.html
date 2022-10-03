@@ -1,0 +1,183 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'images/fav-icon.png' %}" type="image/png">
+    <title>TelePlay</title>
+
+    <!--  css link -->
+    <link rel="stylesheet" href="{% static '/css/main.css' %}">
+
+    <!--  google font link -->
+
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+
+
+    <!-- main container -->
+
+    <div class="container">
+
+        <!--  #HEADER SECTION -->
+
+        <header class="">
+            <div class="navbar">
+
+
+
+                <a href="#" class="navbar-brand">
+                    <img src="{% static 'images/logo.png' %}" alt="">
+                </a>
+
+                <!-- navbar navigation -->
+
+                <nav class="">
+                    <ul class="navbar-nav">
+
+                        <li style="padding-left: 20px;"> <a href="{% url 'index' %}" class="navbar-link">  Home</a> </li>
+                        <li> <a href="#category" class="navbar-link">Category</a> </li>
+
+
+                    </ul>
+                </nav>
+
+                <!-- search and sign-in -->
+
+                <div class="navbar-actions">
+
+                    <form action="#" class="navbar-form">
+                        <a href="{% url 'search' %}"> <input type="text" name="search"
+                                placeholder="I'm looking for..." class="navbar-form-search"> </a>
+
+                        <button class="navbar-form-btn">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </button>
+
+                        <button class="navbar-form-close">
+                            <ion-icon name="close-circle-outline"></ion-icon>
+                        </button>
+                    </form>
+
+
+
+
+                    <!-- search button for small screen -->
+
+                    <button class="navbar-search-btn">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+
+                    {%if user.is_authenticated %}
+                    <a href="{% url 'logout' %}" class="navbar-signin">
+                        <span>Logout</span>
+                    </a>
+                    {% else %}
+                    <a href="{% url 'login' %}" class="navbar-signin">
+                        <span>Sign in</span>
+                    </a>
+                    <a href="{% url 'signup' %}" class="navbar-signin">
+                        <span>Sign Up</span>
+                    </a>
+                    {% endif %}
+
+
+                </div>
+
+            </div>
+        </header>
+        {% block content %}
+
+        {% endblock%}
+    </div>
+
+    <!-- Footer  -->
+    <footer>
+
+        <div class="footer-content">
+      
+          <div class="footer-brand">
+            <img src="{% static 'images/logo.png' %}" alt="" class="footer-logo">
+            <p class="slogan">Movies & TV Shows, Online cinema
+            </p>
+      
+      
+            <div class="social-link">
+      
+              <a href="https://www.facebook.com/profile.php?id=100085911518079" target="_blank">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+              <a href="https://twitter.com/TelePlayvit" target="_blank">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+              <a href="https://www.instagram.com/teleplay.vitb/" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+              <a href="https://youtube.com/channel/UCe_izpv0jZrNDJljx2BW5XQ" target="_blank">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+      
+            </div>
+          </div>
+      
+      
+          <!-- <ul>
+      
+            <h4 class="link-heading">Browse</h4>
+      
+            <li class="link-item"><a href="{% url 'TVshows' %}">TV Shows</a></li>
+            <li class="link-item"><a href="#">Movies</a></li>
+            <li class="link-item"><a href="#">Kids</a></li>
+            <li class="link-item"><a href="#">Collections</a></li>
+      
+          </ul> -->
+      
+      
+          <ul>
+      
+            <h4 class="link-heading">Help</h4>
+      
+            <li class="link-item"><a href="{% url 'contactus' %}">Contact Us</a></li>
+            <!-- <li class="link-item"><a href="#">E-mail us </a></li> -->
+      
+      
+          </ul>
+        </div>
+      
+        </div>
+      
+        <div class="footer-copyright">
+      
+          <div class="copyright">
+            <p>&copy; Copyright 2022 TelePlay</p>
+          </div>
+      
+          <div class="wrapper">
+            <a href="{% url 'AboutUs' %}" target="_blank">About Us</a>
+            <a href="{% url 'privacypolicy' %}" target="_blank">Privacy policy</a>
+            <a href="{% url 'TermsandCondition' %}" target="_blank">Terms and conditions</a>
+          </div>
+      
+        </div>
+      
+      </footer>
+      
+      </div>
+      
+      
+      
+      
+      <!--
+          - ionicon link
+        -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

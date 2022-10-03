@@ -1,0 +1,55 @@
+{% extends 'Accounts/base.html' %}
+{% load static %}
+{% block content%}
+
+<link rel="stylesheet" href="{% static 'css/movie.css' %}">
+
+      <!-- #BANNER SECTION -->
+      <section class="banner">
+        <div class="banner-card">
+
+          <img src="{% static 'images/Flames.jpeg'%}" class="banner-img" alt="">
+           
+
+        </div>
+      </section>
+
+      <!-- CATEGORY SECTION -->
+
+      <section class="category" id="category">
+
+        <h2 class="section-heading"  > Flames
+            
+        </h2>   
+            <h3 style="padding-bottom: 20px;">  
+                <a href="https://www.youtube.com/watch?v=ouyrvRJ6-3M" target="_blank" > Watch The Trailer <ion-icon name="play-circle-outline" ></ion-icon>  </a>
+              <p> <iconify-icon icon="fa:imdb" style="color: yellow;"></iconify-icon> 8.9</p>
+              <p> Comedy , Romance</p>
+            </h3>       
+       
+        <h4 style="color: #dfac0d ;">Overview</h4>
+        <p  style="color: whitesmoke ;"> FLAMES #PadhaiAurPyaar is the story of a young romance unfolding as a chemical reaction. Studious Rajat falls for Ishita, the new girl in the tuition. Rajat’s BFFs, Pandey & Anusha's friendship is beginning to turn into a relationship. The equations of friendships evolve in the first season of this teenage romance       </p>
+
+        <h3 style="padding-top: 20px;" > Where To Watch </h3>
+        <div class="where_to_watch"> <a href="https://tvfplay.com/season/flames-by-the-timeliners/Season-1/293" target="_blank">   TVF  </a></div>
+        
+        
+      </section>
+
+    <!-- FOOTER SECTION -->
+
+    
+
+  </div>
+
+
+  
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+
+  {% endblock %}

@@ -1,0 +1,57 @@
+{% extends 'Accounts/base.html' %}
+{% load static %}
+{% block content%}
+
+<link rel="stylesheet" href="{% static 'css/movie.css' %}">
+
+      <!-- #BANNER SECTION -->
+      <section class="banner">
+        <div class="banner-card">
+
+          <img src="{% static 'images/KotaFactory.jpg'%}" class="banner-img" alt="">
+           
+
+        </div>
+      </section>
+
+      <!-- CATEGORY SECTION -->
+
+      <section class="category" id="category">
+
+        <h2 class="section-heading"  >Kota Factory
+            
+        </h2>   
+            <h3 style="padding-bottom: 20px;">  
+                <a href="https://www.youtube.com/watch?v=pNZQ6msbOvM" target="_blank" > Watch The Trailer <ion-icon name="play-circle-outline" ></ion-icon>  </a>
+              <p> <iconify-icon icon="fa:imdb" style="color: yellow;"></iconify-icon> 9.1</p>
+              <p> Comedy , Drama</p>
+            </h3>       
+       
+        <h4 style="color: #dfac0d ;">Overview</h4>
+        <p  style="color: whitesmoke ;">In a city of coaching centers known to train India’s finest collegiate minds, an earnest but unexceptional student and his friends navigate campus life.</p>
+
+        <h3 style="padding-top: 20px;" > Where To Watch </h3>
+        <div class="where_to_watch"> <a href="https://www.netflix.com/in/title/81249783?source=imdb" target="_blank">   Netflix <iconify-icon icon="mdi:netflix" style="color: red;"></iconify-icon> </a></div>
+        <div class="where_to_watch"> <a href="https://www.youtube.com/playlist?list=PLTB0eCoUXErb7pV0Sj1hXWrxerSZX1qgh" target="_blank">  Youtube  <ion-icon name="logo-youtube" style="color:red ;"></ion-icon> </a></div>
+        <div class="where_to_watch"> <a href="https://tvfplay.com/show/tvfs-kota-factory/588" target="_blank">  TVF  </a></div>
+        
+        
+      </section>
+
+    <!-- FOOTER SECTION -->
+
+    
+
+  </div>
+
+
+  
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+
+  {% endblock %}

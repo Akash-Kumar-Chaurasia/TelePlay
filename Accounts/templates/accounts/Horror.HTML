@@ -1,0 +1,143 @@
+{% extends 'Accounts/base.html' %}
+{% load static %}
+{% block content%}
+
+
+<!-- main container -->
+
+  <div class="container">
+
+   <!--  #HEADER SECTION -->
+
+    
+    <main>
+        <div style="padding-left:50px ; text-align: center; padding-top: 50px; padding-bottom: 50px;"> <h2>Comedy</h2></div>
+
+
+
+
+
+
+
+      <!-- MOVIES SECTION -->
+      <section class="movies">
+
+       
+
+        <!-- movies grid -->
+
+        <div class="movies-grid">
+
+          
+
+
+        <!--BHOOL BHULAIYAA 2-->
+        
+        <div class="movie-card">
+  
+          <div class="card-head">
+            <img src="{% static 'images/movies/bhool_bhulaya.jpg' %}" alt="" class="card-img">
+  
+            <div class="card-overlay">
+  
+  
+              <div class="rating">
+                <ion-icon name="star-outline"></ion-icon>
+                <span>5.7</span>
+              </div>
+  
+              <div class="play">
+                <a href="https://youtu.be/P2KRKxAb2ek " target="_blank">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                  <span>Watch Trailer</span>
+                </a>
+              </div>
+              <div class="play">
+                <a href="https://www.netflix.com/title/81243747" target="_blank">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                  <span>Watch movie</span>
+                </a>
+              </div>
+  
+            </div>
+          </div>
+  
+          <div class="card-body">
+            <a href="{}" target="_blank"><h3 class="card-title">Bhool Bhulaiyaa 2</h3></a>
+  
+            <div class="card-info">
+              <span class="genre">Horror/Comedy </span>
+              <span class="year">2022</span>
+            </div>
+          </div>
+  
+        </div>
+        
+        <!-- AnnabelleComesHome -->
+        <div class="movie-card">
+  
+          <div class="card-head">
+            <img src="{% static 'images/movies/AnnabelleComesHome.jpg' %}" alt="" class="card-img">
+  
+            <div class="card-overlay">
+  
+  
+              <div class="rating">
+                <ion-icon name="star-outline"></ion-icon>
+                <span>5.9</span>
+              </div>
+  
+              <div class="play">
+                <a href="https://youtu.be/bCxm7cTpBAs" target="_blank">
+                  <ion-icon name="play-circle-outline"></ion-icon>
+                  <span>Watch Trailer</span>
+                </a>
+              </div>
+  
+            </div>
+          </div>
+  
+          <div class="card-body">
+            <a href="{}" target="_blank"><h3 class="card-title">Annabelle Comes Home</h3></a>
+  
+            <div class="card-info">
+              <span class="genre">Horroe/Thriller</span>
+              <span class="year">2019</span>
+            </div>
+          </div>
+  
+        </div>
+        
+       
+<!--            -->
+  
+      </div>
+
+        
+
+      </section>
+
+
+
+
+
+
+      
+
+    </main>
+
+
+    
+
+  </div>
+
+
+  
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  {% endblock %}

@@ -1,0 +1,45 @@
+{% load static %}
+{% load crispy_forms_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/Signup.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/fav-icon.png' %}" type="image/png">
+    <title>Sign-Up</title>
+</head>
+
+<body>
+    <div class="Sign-box" >
+        <h2>Sign-Up</h2>
+        <h3> Please fill in this form to create an account.</h3>
+        <br>
+        <form method="POST" action="">
+            {% csrf_token %}
+
+            {% for field in form %}
+                <div class="user-box">
+                    {{field}}
+                    <label>{{ field.label_tag }}</label>
+                </div>
+            {% endfor %}
+
+            <!-- <div class="privacy_policy" style="text-align: center;">
+                By creating an account you agree to our <a href="C:\Users\akash\Desktop\Ravi\privacy_policy.html" style="color:dodgerblue" target="_blank">Terms & Privacy</a>
+            </div> -->
+
+            <input class="btn__submit" type="submit" name="Create User" value="Sign Up" > 
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+            </button> 
+        </form>                 -->
+            <!-- <button class="btn btn-primary" type="submit">Register</button>
+        </form> -->
+    </div>
